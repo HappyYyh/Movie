@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影详情</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="top">
+        <span>我爱电影</span>
+        <input type="text"  placeholder="搜索电影、电视剧、综艺、影人"/>
+        <a href="#"><img src="img/query.png"></a>
+    </nav>
+</header>
+<!--主体-->
+<div class="main">
+    <div class="bar">
+        <h2>电影详情
+            <span><a href="正在热映.html">热门电影 \</a></span>
+            <span><a href="即将上映.html">即将上映 \</a></span>
+            <span><a href="排行榜.html">排行榜</a></span>
+        </h2>
+        <hr/>
+    </div>
+    <div class="detail">
+        <h1></h1>
+        <div>
+            <img src="#" id="image">
+            <div class="info">
+                <P><span class="p1">导演:</span><span><a href="#"  class="a" id="directors"></a> </span> </P>
+                <p><span class="p1">编剧:</span><span><a href="#"  class="a" id="writers"></a> </span> </p>
+                <p><span class="p1">主演:</span><span><a href="#"  class="a" id="casts"></a> </span><span class="p1">更多..</span> </p>
+                <p><span class="p1">类型:</span><span><a href="#"  class="a" id="genres"></a> </span> </p>
+                <p><span class="p1">制片国家/地区</span>:<span class="p2" id="countries"></span> </p>
+                <p><span class="p1">语言:</span><span class="p2" id="languages"></span> </p>
+                <p><span class="p1">上映日期:</span><span class="p2" id="pubdates"></span> </p>
+                <p><span class="p1">片长:</span><span class="p2" id="durations"></span> </p>
+                <p><span class="p1">又名:</span><span class="p2" id="aka"></span></p>
+                <p><span class="p1">IMDb链接:</span><span class="p2"><a href="#"  class="a">tt7362036</a> </span> </p>
+            </div>
+            <div class="rate">
+                <div style="float: left">
+                    <hr class="hr_1">
+                </div>
+                <div class="rate_info">
+                    <p><span>豆瓣评分</span></p>
+                    <div><h2></h2>    <span class="wish_count">286919评论</span></div>
+                    <div class="rate_item">
+                        <div>
+                            <span class="star">一星</span><div class="power"></div><span class="rat_per"></span>
+                        </div>
+                        <div>
+                            <span class="star">二星</span><div class="power"></div><span class="rat_per"></span>
+                        </div>
+                        <div>
+                            <span class="star">三星</span><div class="power"></div><span class="rat_per"></span>
+                        </div>
+                        <div>
+                            <span class="star">四星</span><div class="power"></div><span class="rat_per"></span>
+                        </div>
+                        <div>
+                            <span class="star">五星</span><div class="power"></div><span class="rat_per"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--剧情简介-->
+    <div class="summary clear">
+       <p><span id="s_title" class="s_title"></span><span class="s_title">的剧情简介·····</span></p>
+       <p class="s_content">
+
+       </p>
+    </div>
+    <!--影人-->
+    <div class="cast">
+        <p><span id="c_title" class="c_title"></span><span class="c_title">的影人·····</span></p>
+        <div class="yr_info">
+
+        </div>
+    </div>
+    <!--评论-->
+    <div class="reviews">
+        <p><span id="r_title" class="s_title"></span><span class="s_title">的短评·····</span></p>
+        <div class="d1">
+            <a href="#" class="a1">热门 </a>&nbsp;/&nbsp;
+            <a href="#" class="a2">最新 </a>&nbsp;/&nbsp;
+            <a href="#" class="a2">好友 </a>
+        </div>
+        <hr>
+        <div class="comments">
+
+        </div>
+        <div class="showmore">
+            <span>>></span><a href="#" id="more_comment"><span>查看更多评论</span></a>
+        </div>
+        <div class="showless">
+            <span>>></span><a href="#" id="less_comment"><span>收起评论</span></a>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<footer class="clear">
+    <hr/>
+    <span class="foot-left">@1997-2018&nbsp;&nbsp;&nbsp;&nbsp;我爱电影科技有限公司</span>
+    <span class="foot-right">
+        <a href="#">关于</a>
+        <a href="#">联系我们</a>
+        <a href="#">免责说明</a>
+        <a href="#">帮助中心</a>
+        <a href="#">广告</a>
+    </span>
+</footer>
+</body>
+</body>
+<script type="text/javascript" src="js/detail.js"></script>
+</html>

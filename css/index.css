@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-size: 12px; /*也就是12px*/
+    background-color: #f7f7f7;
+
+}
+
+/*清除样式*/
+.clear {
+    clear:both;
+}
+
+.top {
+    height: 60px;
+    line-height: 60px;
+    background-color: #e3ebec;
+    padding:0 50px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.top span{
+    font-size: 30px;
+    font-family: 华文楷体;
+    color: #3498aa;
+    font-weight: bold;
+    float: left;
+    padding: 0px 20px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+.top input {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #999999;
+    border-radius: 5px ;
+    float: left;
+    margin-top: 15px;
+    margin-left: 150px;
+    padding-left: 15px;
+}
+
+.top a img{
+    width: 30px;
+    margin-top: 15px;
+    background: #858585;
+    border-radius: 5px;
+}
+
+.main{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bar h2{
+    font-size: 20px;
+    font-family: 宋体;
+}
+
+.bar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #858585;
+}
+
+.bar hr{
+    width: 100%;
+    margin-top: 5px;
+    background-color: #858585;
+    border-top: 1px;
+}
+
+.item{
+    margin-top: 10px;
+}
+
+.item figure{
+    position: relative;
+    float: left;
+    margin: 15px 23px;
+    width: 190px;
+    height: 350px;
+    padding: 1px;
+    text-align: center;
+}
+
+.item figure img{
+    width: 190px;
+    height: 266px;
+    background-size:190px,266px ;
+}
+
+.item figure p{
+    margin-top: 5px;
+}
+.item .title{
+    font-size: 16px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.item .rate{
+    font-size: 16px;
+    color: brown;
+}
+
+footer{
+   /* position: absolute;
+    left: 10%;
+    bottom: 0;*/
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .foot-left{
+    color: #b3b3b3;
+    float: left;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+
+footer .foot-right {
+    float: right;
+    padding: 16px 20px;
+}
+
+footer .foot-right a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #3498aa;
+    padding: 1px 5px;
+}
+
+footer hr{
+    width: 100%;
+    margin-top: 5px;
+    background-color: #858585;
+    border-top: 1px;
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>即将上映</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <nav class="top">
+         <span>我爱电影</span>
+         <input type="text" id="search" placeholder="搜索电影、电视剧、综艺、影人"/>
+         <a href="#" onclick="queryByCondition()"><img src="img/query.png"></a>
+    </nav>
+</header>
+<!--主体-->
+<div class="main">
+    <div class="bar">
+        <h2>即将上映
+            <span><a href="正在热映.html">正在热映 \</a></span>
+            <span><a href="排行榜.html">排行榜</a></span>
+        </h2>
+        <hr/>
+    </div>
+    <!--电影列表-->
+    <div class="item">
+    </div>
+</div>
+<!--页脚-->
+<footer class="clear">
+    <hr/>
+    <span class="foot-left">@1997-2018&nbsp;&nbsp;&nbsp;&nbsp;我爱电影科技有限公司</span>
+    <span class="foot-right">
+        <a href="#">关于</a>
+        <a href="#">联系我们</a>
+        <a href="#">免责说明</a>
+        <a href="#">帮助中心</a>
+        <a href="#">广告</a>
+    </span>
+</footer>
+</body>
+<script type="text/javascript">
+    $(function () {
+        var url = 'https://api.douban.com/v2/movie/coming_soon?apikey=0b2bdeda43b5688921839c8ecb20399b';
+        $.ajax({
+            type:'get',
+            url: url,
+            dataType:'jsonp',
+            success :function (result) {
+                var show = '';
+                $.each(result.subjects,function (index,item) {
+                    show += "<figure>" +
+                        "<a href='detail.html?id="+item.id+"' onclick='set("+item.id+")'><img src='"+item.images.medium+"'></a>" +
+                        "<figcaption>" +
+                        "<p><span class='title'>"+item.title+"</span></p>" +
+                        "<p><span class='rate'>"+item.pubdates+"</span></p>" +
+                        "</figcaption>" +
+                        "</figure>"
+                });
+                $(".item").append(show);
+            }
+        })
+    });
+</script>
+</html>
