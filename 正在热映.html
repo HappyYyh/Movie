@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
     <title>正在热映</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -32,13 +33,14 @@
 <!--页脚-->
 <footer class="clear">
     <hr/>
-    <span class="foot-left">@1997-2018&nbsp;&nbsp;&nbsp;&nbsp;我爱电影科技有限公司</span>
+    <span class="foot-left">@1997-2020&nbsp;&nbsp;&nbsp;&nbsp;我爱电影科技有限公司</span>
     <span class="foot-right">
         <a href="#">关于</a>
         <a href="#">联系我们</a>
         <a href="#">免责说明</a>
         <a href="#">帮助中心</a>
         <a href="#">广告</a>
+        <a href="http://www.beian.miit.gov.cn">苏ICP备18030499号</a>
     </span>
 </footer>
 </body>
@@ -46,7 +48,7 @@
     $(function () {
         //不指定查询多少 默认个数是20
         //https://api.douban.com/v2/movie/in_theaters?count=50
-        var url = 'https://api.douban.com/v2/movie/in_theaters?apikey=0b2bdeda43b5688921839c8ecb20399b';
+        var url = 'https://api.douban.com/v2/movie/in_theaters?count=50&apikey=0b2bdeda43b5688921839c8ecb20399b';
         $.ajax({
             type:'get',
             url: url,
